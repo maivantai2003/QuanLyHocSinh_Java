@@ -1,5 +1,4 @@
 package QuanLyHocSinh_Java.src.HocSinhController;
-
 import QuanLyHocSinh_Java.src.HocSinhView.Login;
 import QuanLyHocSinh_Java.src.HocSinhView.Signup;
 import java.awt.event.*;

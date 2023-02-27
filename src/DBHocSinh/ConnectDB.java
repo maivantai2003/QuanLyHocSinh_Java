@@ -18,5 +18,8 @@ public class ConnectDB {
             e.printStackTrace();
         }
     }
+    public void readData(){
+
+    }
 
 }
