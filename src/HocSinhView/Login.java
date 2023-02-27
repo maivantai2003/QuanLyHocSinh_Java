@@ -56,27 +56,31 @@ public class Login extends JFrame{
     
     JComboBox quyenTruyCap;
     Font f = new Font("my font",Font.BOLD,14);
-    
     public Login(){
+        
+    }
+    public Login(String str){
+        this.setTitle(str);
         this.setSize(530,347);
         this.setLayout(null);
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         this.setLocationRelativeTo(null);
         heading = new Heading();
+        this.setResizable(false);
         ActionListener ac = new LoginControl(this);
         title = new JLabel("Đăng nhập");
         title.setFont(new Font("my font",Font.BOLD,24));
         title.setForeground(new Color(255, 92, 0));
         title.setBounds(189,94,127,29);
 
-        taiKhoanText = new JLabel("Tài khoản");
+        taiKhoanText = new JLabel("Tài khoản:");
         taiKhoanText.setFont(new Font("my font",Font.BOLD,20));
         taiKhoanText.setBounds(33,41,133,29);
 
         taiKhoan = new JTextField();
         taiKhoan.setBounds(153,33,294,34);
 
-        matKhauText = new JLabel("Mật khẩu");
+        matKhauText = new JLabel("Mật khẩu:");
         matKhauText.setFont(new Font("my font",Font.BOLD,20));
         matKhauText.setBounds(33,88,133,29);
 
@@ -110,7 +114,7 @@ public class Login extends JFrame{
         quyenTruyCap.setBackground(new Color(197, 251, 248));
         quyenTruyCap.setFont(f);
         quyenTruyCap.setFocusable(false);
-        quyenTruyCap.setBounds(400,142,80,31);
+        quyenTruyCap.setBounds(400,142,100,31);
        
         
 

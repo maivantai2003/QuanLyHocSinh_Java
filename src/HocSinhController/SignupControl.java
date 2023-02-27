@@ -1,4 +1,5 @@
 package QuanLyHocSinh_Java.src.HocSinhController;
+
 import QuanLyHocSinh_Java.src.HocSinhView.Login;
 import QuanLyHocSinh_Java.src.HocSinhView.Signup;
 import java.awt.event.*;
@@ -20,16 +21,17 @@ public class SignupControl implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         
        if(e.getActionCommand().equals("Đăng nhập")){
-        new Login();
+        new Login("Quản lý học sinh");
         su.dispose();
        }
        if(e.getActionCommand().equals("Đăng ký")){
             String tk = su.getTaiKhoan().getText();
+            System.out.println(tk);
             String ps = String.valueOf(su.getMatKhau().getPassword());
             String psComfirm = String.valueOf(su.getXacNhan().getPassword());
             if (check(ps, psComfirm)){
                 JOptionPane.showMessageDialog(null, "Thông tin đã được gửi đi, vui lòng chờ phế duyệt","Thông báo",JOptionPane.PLAIN_MESSAGE);
-                new Login();
+                new Login("Quản lý học sinh");
                 su.dispose();
             }else{
                 JOptionPane.showMessageDialog(null, "Mật khẩu và mật khẩu xác nhận không trung khớp","Thông báo",JOptionPane.PLAIN_MESSAGE);

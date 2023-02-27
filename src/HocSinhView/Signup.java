@@ -1,5 +1,6 @@
 package QuanLyHocSinh_Java.src.HocSinhView;
 import javax.swing.*;
+
 import QuanLyHocSinh_Java.src.HocSinhController.SignupControl;
 
 import java.awt.*;
@@ -35,10 +36,15 @@ public class Signup extends JFrame{
     JButton login;
     JButton signup;
     public Signup(){
+        
+    }
+    public Signup(String str){
+        this.setTitle(str);
         this.setSize(530,380);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(null);
         this.setLocationRelativeTo(null);
+        this.setResizable(false);
         heading = new Heading();
         content = new JPanel();
         content.setBounds(0,110,530,233);
@@ -101,5 +107,5 @@ public class Signup extends JFrame{
         this.add(content);
         this.setVisible(true);
     }
-
+   
 }

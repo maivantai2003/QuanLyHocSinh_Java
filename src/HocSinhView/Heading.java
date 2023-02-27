@@ -11,7 +11,7 @@ public class Heading extends JPanel {
         this.setBackground(new Color(197, 251, 248));
         this.setBounds(0,0,530,110);
         this.setLayout(null);
-        ImageIcon logoIcon = new ImageIcon(".\\img\\logo.png");
+        ImageIcon logoIcon = new ImageIcon("E:\\JAVA\\untitled\\src\\QuanLyHocSinh_Java\\img\\logo.png");
         logo.setIcon(logoIcon);
         logo.setBounds(36,4,100,100);
         title1 = new JLabel("Quản lý học sinh");

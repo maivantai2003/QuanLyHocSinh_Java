@@ -17,7 +17,7 @@ public class LoginControl implements ActionListener{
         }
         if(e.getActionCommand().equals("Đăng ký")){
             System.out.println(1);
-            new Signup();
+            new Signup("Quản lý học sinh");
             lg.dispose();
         }
         if(e.getActionCommand().equals("Face ID")){
